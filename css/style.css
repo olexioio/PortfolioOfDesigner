@@ -1,0 +1,136 @@
+@font-face {
+    font-weight: 400;
+    font-family: "Coolvetica Regular";
+    src: url("../fonts/coolvetica_rg.otf");
+}
+@font-face {
+    font-weight: 400;
+    font-family: "Coolvetica Italic";
+    src: url("../fonts/coolvetica_rg_it.otf");
+}
+@font-face {
+    font-weight: 300;
+    font-family: "Helvetica Light";
+    src: url("../fonts/Helvetica.ttc");
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Coolvetica Regular;
+    background: #050318;
+    padding: 48px 0 91px;
+    /* height: 100vh; */
+}
+.container {
+    width: 1610px;
+    margin: 0 auto;
+}
+/* MAIN MENU */
+.main-menu__list {
+    display: flex;
+    justify-content: center;
+}
+.main-menu__item {
+    margin-right: 80px;
+}
+.main-menu__item span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.2px;
+    color: #FAF2FD;
+    text-transform: uppercase;
+}
+.main-menu__item.active span{
+    color: #357AE6;
+}
+.main-menu__item:last-child {
+    margin-right: 0;
+}
+/* OFFER-SECTION */
+.offer-section {
+    margin-bottom: 186px;
+}
+.offer {
+    margin-top: 209px;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+.offer p {
+    text-transform: uppercase;
+    color: #C2ADFF;
+    font-size: 300px;
+    line-height: 246px;
+}
+.offer p:last-child {
+    font-family: "Coolvetica Italic";
+}
+
+.animation-button {
+    width: 173px;
+    height: 173px;
+    border-radius: 100px;
+    border-bottom: 3px solid #C139F3;
+    animation: circle 150ms ease;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+.animation-button a {
+    position: absolute;
+    top: 45%;
+    left: 19%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 19.2px;
+    text-transform: uppercase;
+    color: #C139F3BF;
+    text-shadow: #C139F3 1px 0 15px;
+}
+ @keyframes circle {
+    from {
+        border-bottom: 3px solid #C139F3;
+        border-right: 0px solid #C139F3;
+        border-top: 0px solid #C139F3;
+        border-left: 0px solid #C139F3;
+    }
+    25% {
+        border-bottom: 0px solid #C139F3;
+        border-right: 3px solid #C139F3;
+        border-top: 0px solid #C139F3;
+        border-left: 0px solid #C139F3;
+    }
+    50% {
+        border-bottom: 0px solid #C139F3;
+        border-right: 0px solid #C139F3;
+        border-top: 3px solid #C139F3;
+        border-left: 0px solid #C139F3;
+    }
+    75% {
+        border-bottom: 0px solid #C139F3;
+        border-right: 0px solid #C139F3;
+        border-top: 0px solid #C139F3;
+        border-left: 3px solid #C139F3;
+    }
+    to {
+        border-bottom: 3px solid #C139F3;
+        border-right: 0px solid #C139F3;
+        border-top: 0px solid #C139F3;
+        border-left: 0px solid #C139F3;
+    }
+}
+/* FOOTER */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+.telenkov {
+    height: 36px;
+}
+/* .flex-container a img {
+    background: #FAF2FD;
+    border-radius: 100px;
+} */
