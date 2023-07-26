@@ -78,16 +78,17 @@ body {
     font-family: "Coolvetica Italic";
 }
 /* ANIMATION */
-.btn-wrapper {
+/* .btn-wrapper {
     border: 2px solid #C139F3;
+    background: white;
     display: inline-block;
     padding: 5px;
     border-radius: 10000px;
     width: 173px;
     height: 173px;
     position: relative;
-}
-.btn-wrapper::before {
+} */
+/* .btn-wrapper::before {
     content: " ";
     display: block;
     position: absolute;
@@ -110,8 +111,8 @@ body {
     background: #050318;
     transform: translate(-50%, -50%);
     animation: rotate 4s normal linear infinite;
-}
-.btn-wrapper button {
+} */
+/* .btn-wrapper button {
     width: 160px;
     height: 160px;
     border-radius: 10000px;
@@ -119,13 +120,12 @@ body {
     background: #050318;
     color: #C139F3;
     text-transform: uppercase;
-    /* text-shadow: #C139F3 1px 0 100px; */
     text-shadow: 0.3px 0.3px 2px red, 0 0 1em blue, 0 0 0.2em blue;
     position: relative;
     z-index: 1;
     cursor: pointer;
-}
-@keyframes rotate {
+} */
+/* @keyframes rotate {
     0% {
         transform: translate(-50%, -50%) rotate3d(0, 0, 1, 0deg);
       }
@@ -141,14 +141,11 @@ body {
     100% {
         transform: translate(-50%, -50%) rotate3d(0, 0, 1, 360deg);
       }
-}
+} */
 /* TEST SECOND PREUDOELEMENT */
-/* TEST SECOND PREUDOELEMENT */
-/* TEST SECOND PREUDOELEMENT */
-/* TEST SECOND PREUDOELEMENT */
-/* TEST SECOND PREUDOELEMENT */
-/* TEST SECOND PREUDOELEMENT */
-.btn-wrapper-active {
+
+
+/* .btn-wrapper-active {
     border: 2px solid #C139F3;
     display: inline-block;
     padding: 5px;
@@ -156,8 +153,8 @@ body {
     width: 173px;
     height: 173px;
     position: relative;
-}
-.btn-wrapper-active::before {
+} */
+/* .btn-wrapper-active::before {
     content: " ";
     display: block;
     position: absolute;
@@ -168,7 +165,7 @@ body {
     background: #050318;
     transform: translate(-50%, -50%);
     animation: rotate 0.5s normal linear infinite;
-}
+} */
 /* .btn-wrapper-active::after {
     content: " ";
     display: block;
@@ -181,7 +178,7 @@ body {
     transform: translate(-50%, -50%);
     animation: rotate 0.2s normal linear infinite;
 } */
-.btn-wrapper-active button {
+/* .btn-wrapper-active button {
     width: 160px;
     height: 160px;
     border-radius: 10000px;
@@ -189,19 +186,12 @@ body {
     background: #050318;
     color: #C139F3;
     text-transform: uppercase;
-    /* text-shadow: #C139F3 1px 0 100px; */
+    text-shadow: #C139F3 1px 0 100px;
     text-shadow: 0.3px 0.3px 2px red, 0 0 1em blue, 0 0 0.2em blue;
     position: relative;
     z-index: 1;
     cursor: pointer;
-}
-/* TEST SECOND PREUDOELEMENT */
-/* TEST SECOND PREUDOELEMENT */
-/* TEST SECOND PREUDOELEMENT */
-/* TEST SECOND PREUDOELEMENT */
-/* TEST SECOND PREUDOELEMENT */
-/* TEST SECOND PREUDOELEMENT */
-/* TEST SECOND PREUDOELEMENT */
+} */
 /* TEST SECOND PREUDOELEMENT */
 
 

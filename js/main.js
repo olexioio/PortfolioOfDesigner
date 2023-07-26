@@ -4,7 +4,7 @@ const mainSection = document.querySelector(".main-section");
 
 function selectTab(num) {
     mainSection.classList.remove("active-section");
-    for(let i=1;i<tabs.length;i++){
+    for(let i=0;i<tabs.length;i++){
         tabs[i].classList.remove("item__active");
         sections[i].classList.remove("active-section");
     }
@@ -16,11 +16,3 @@ tabs.forEach((item,indexTab) => {
         selectTab(indexTab);
     })
 });
-
-tabs[0].classList.remove("item__active");
-
-
-
-// tab.addEventListener("click",() => {
-//     tab.classList.add("item__active");
-// });
