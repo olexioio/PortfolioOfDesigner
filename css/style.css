@@ -16,6 +16,7 @@
 
 * {
     box-sizing: border-box;
+    cursor: default;
 }
 body {
     font-family: Coolvetica Regular;
@@ -41,6 +42,7 @@ body {
     line-height: 19.2px;
     color: #FAF2FD;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .main-menu__item.active span{
     color: #357AE6;
@@ -68,60 +70,137 @@ body {
 .offer p:last-child {
     font-family: "Coolvetica Italic";
 }
-
-.animation-button {
+/* ANIMATION */
+.btn-wrapper {
+    border: 2px solid #C139F3;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10000px;
     width: 173px;
     height: 173px;
-    border-radius: 100px;
-    border-bottom: 3px solid #C139F3;
-    animation: circle 150ms ease;
-    animation-iteration-count: infinite;
     position: relative;
 }
-.animation-button a {
+.btn-wrapper::before {
+    content: " ";
+    display: block;
     position: absolute;
-    top: 45%;
-    left: 19%;
-    text-decoration: none;
-    text-align: center;
-    font-size: 16px;
-    line-height: 19.2px;
+    top: 50%;
+    left: 50%;
+    width: 35px;
+    height: 180px;
+    background: #050318;
+    transform: translate(-50%, -50%);
+    animation: rotate 7s normal linear infinite;
+}
+.btn-wrapper::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 15px;
+    background: #050318;
+    transform: translate(-50%, -50%);
+    animation: rotate 4s normal linear infinite;
+}
+.btn-wrapper button {
+    width: 160px;
+    height: 160px;
+    border-radius: 10000px;
+    border: none;
+    background: #050318;
+    color: #C139F3;
     text-transform: uppercase;
-    color: #C139F3BF;
-    text-shadow: #C139F3 1px 0 15px;
+    /* text-shadow: #C139F3 1px 0 100px; */
+    text-shadow: 0.3px 0.3px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
 }
- @keyframes circle {
-    from {
-        border-bottom: 3px solid #C139F3;
-        border-right: 0px solid #C139F3;
-        border-top: 0px solid #C139F3;
-        border-left: 0px solid #C139F3;
-    }
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate3d(0, 0, 1, 0deg);
+      }
     25% {
-        border-bottom: 0px solid #C139F3;
-        border-right: 3px solid #C139F3;
-        border-top: 0px solid #C139F3;
-        border-left: 0px solid #C139F3;
-    }
+        transform: translate(-50%, -50%) rotate3d(0, 0, 1, 90deg);
+      }
     50% {
-        border-bottom: 0px solid #C139F3;
-        border-right: 0px solid #C139F3;
-        border-top: 3px solid #C139F3;
-        border-left: 0px solid #C139F3;
-    }
+        transform: translate(-50%, -50%) rotate3d(0, 0, 1, 180deg);
+      }
     75% {
-        border-bottom: 0px solid #C139F3;
-        border-right: 0px solid #C139F3;
-        border-top: 0px solid #C139F3;
-        border-left: 3px solid #C139F3;
-    }
-    to {
-        border-bottom: 3px solid #C139F3;
-        border-right: 0px solid #C139F3;
-        border-top: 0px solid #C139F3;
-        border-left: 0px solid #C139F3;
-    }
+        transform: translate(-50%, -50%) rotate3d(0, 0, 1, 270deg);
+      }
+    100% {
+        transform: translate(-50%, -50%) rotate3d(0, 0, 1, 360deg);
+      }
 }
+/* TEST SECOND PREUDOELEMENT */
+/* TEST SECOND PREUDOELEMENT */
+/* TEST SECOND PREUDOELEMENT */
+/* TEST SECOND PREUDOELEMENT */
+/* TEST SECOND PREUDOELEMENT */
+/* TEST SECOND PREUDOELEMENT */
+.btn-wrapper-active {
+    border: 2px solid #C139F3;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10000px;
+    width: 173px;
+    height: 173px;
+    position: relative;
+}
+.btn-wrapper-active::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 130px;
+    height: 180px;
+    background: #050318;
+    transform: translate(-50%, -50%);
+    animation: rotate 0.5s normal linear infinite;
+}
+/* .btn-wrapper-active::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 130px;
+    background: #050318;
+    transform: translate(-50%, -50%);
+    animation: rotate 0.2s normal linear infinite;
+} */
+.btn-wrapper-active button {
+    width: 160px;
+    height: 160px;
+    border-radius: 10000px;
+    border: none;
+    background: #050318;
+    color: #C139F3;
+    text-transform: uppercase;
+    /* text-shadow: #C139F3 1px 0 100px; */
+    text-shadow: 0.3px 0.3px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+/* TEST SECOND PREUDOELEMENT */
+/* TEST SECOND PREUDOELEMENT */
+/* TEST SECOND PREUDOELEMENT */
+/* TEST SECOND PREUDOELEMENT */
+/* TEST SECOND PREUDOELEMENT */
+/* TEST SECOND PREUDOELEMENT */
+/* TEST SECOND PREUDOELEMENT */
+/* TEST SECOND PREUDOELEMENT */
+
+
+
+
+
 /* FOOTER */
 .flex-container {
     display: flex;
@@ -134,3 +213,8 @@ body {
     background: #FAF2FD;
     border-radius: 100px;
 } */
+
+
+
+
+
