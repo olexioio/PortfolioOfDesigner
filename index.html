@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design of everything</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/my-reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
         <div class="container">
             <ul class="main-menu__list">
-                <li class="main-menu__item"><span>Portfolio</span></li>
-                <li class="main-menu__item"><span>Work with us</span></li>
-                <li class="main-menu__item active"><span>Request a quote</span></li>
-                <li class="main-menu__item"><span>Contact us</span></li>
+                <li class="main-menu__item item__active" data-item="1"><span>Portfolio</span></li>
+                <li class="main-menu__item" data-item="2"><span>Work with us</span></li>
+                <li class="main-menu__item" data-item="3"><span>Request a quote</span></li>
+                <li class="main-menu__item" data-item="4"><span>Contact us</span></li>
             </ul>
         </div>
     </header>
 
-    <section class="offer-section">
+
+    <section class="main-section offer-section active-section">
         <div class="container">
             <div class="offer">
                 <div class="flex-container">
@@ -35,14 +36,55 @@
         </div>
     </section>
 
+    <section class="section portfolio-section" data-section="1">
+        <div class="container">
+            <div class="portfolio-wrapper">
+                <input type="text" placeholder="Type your email" id="portfolio-email">
+                <button class="portfolio-email-btn">Request portfolio</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section career-section" data-section="2">
+        <div class="container">
+            <div class="career-wrapper">
+                <input type="text" placeholder="Type your email" id="career-email">
+                <div class="career__drop-zone" id="drop-zone">
+                    <span>+</span>
+                    <span>browse or drop your resume</span>
+                </div>
+                <button class="career-email-btn">send resume</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section request-section" data-section="3">
+        <div class="container">
+            <div class="request-wrapper">
+                <input type="text" placeholder="Type your email" id="request-email">
+                <button class="request-email-btn">Request a quote</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact-us-section" data-section="4">
+        <div class="container">
+            <div class="contact-us-wrapper">
+                <a class="contact-us-email-btn">team@telenkov.com</a>
+            </div>
+        </div>
+    </section>
+
+
     <footer>
         <div class="container">
             <div class="flex-container">
                 <img src="img/Telenkov.png" alt="TELENKOV" class="telenkov">
-                <a href="#"><img src="img/telegram-icon.png" alt="Telegram"></a>
+                <a href="https://t.me/Telenkovvv" target="_blank"><img src="img/telegram-icon.png" alt="Telegram"></a>
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
     <script src="js/rotate-animation.js"></script>
 </body>
 </html>

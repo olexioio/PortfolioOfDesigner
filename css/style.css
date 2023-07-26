@@ -15,14 +15,15 @@
 }
 
 * {
+    font-family: Coolvetica Regular;
     box-sizing: border-box;
     cursor: default;
+    user-select: none;
 }
 body {
-    font-family: Coolvetica Regular;
+    font-weight: 400;
     background: #050318;
     padding: 48px 0 91px;
-    /* height: 100vh; */
 }
 .container {
     width: 1610px;
@@ -43,15 +44,21 @@ body {
     color: #FAF2FD;
     text-transform: uppercase;
     cursor: pointer;
+    transition: color 0.3s ease;
 }
-.main-menu__item.active span{
+.item__active span{
     color: #357AE6;
+}
+.main-menu__item span:hover{
+    color: #357AE6;
+    transition: color 0.3s ease;
 }
 .main-menu__item:last-child {
     margin-right: 0;
 }
 /* OFFER-SECTION */
 .offer-section {
+    display: none;
     margin-bottom: 186px;
 }
 .offer {
@@ -200,6 +207,202 @@ body {
 
 
 
+/* PORTFOLIO SECTION */
+.portfolio-section {
+    display: none;
+    padding: 414px 0 353px;
+}
+.portfolio-wrapper {
+    width: 420px;
+    margin: 0 auto;
+}
+#portfolio-email {
+    font-family: Helvetica Light;
+    font-weight: 300;
+    font-size: 14px;
+    width: 419px;
+    padding: 16px 0 16px 32px;
+    border-radius: 888px;
+    border: 1px solid #C139F3;
+    color: #357AE6;
+    background: #050318;
+    outline: none;
+    cursor: text;
+    margin-bottom: 24px;
+}
+#portfolio-email::placeholder {
+    color: #357AE6;
+}
+#portfolio-email:focus {
+    border: 2px solid #C139F3;
+    padding: 15px 0 15px 31px;
+}
+.portfolio-email-btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #050318;
+    border: 2px solid #C139F3;
+    color: #FAF2FD;
+    border-radius: 888px;
+    padding: 14.5px 32px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.portfolio-email-btn:hover {
+    background: #C139F3;
+    transition: background 0.3s ease;
+}
+/* PORTFOLIO SECTION */
+
+/* CAREER */
+.career-section {
+    display: none;
+    padding: 373px 0 245px;
+}
+.career-wrapper {
+    width: 420px;
+    margin: 0 auto;
+}
+#career-email {
+    font-family: Helvetica Light;
+    font-weight: 300;
+    font-size: 14px;
+    width: 419px;
+    padding: 16px 0 16px 32px;
+    border-radius: 888px;
+    border: 1px solid #C139F3;
+    color: #357AE6;
+    background: #050318;
+    outline: none;
+    cursor: text;
+    margin-bottom: 24px;
+}
+#career-email::placeholder {
+    color: #357AE6;
+}
+#career-email:focus {
+    border: 2px solid #C139F3;
+    padding: 15px 0 15px 31px;
+}
+.career__drop-zone {
+    border: 1px solid #C139F3;
+    border-radius: 888px;
+    height: 192px;
+    margin-bottom: 24px;
+    text-align: center;
+    padding: 68px 0;
+    transition: border 0.2s ease;
+}
+.career__drop-zone:hover {
+    border: thick double #C139F3;
+    transition: border 0.2s ease;
+}
+.career__drop-zone span{
+    font-family: Helvetica Light;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #357AE6;
+}
+.career-email-btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #050318;
+    border: 2px solid #C139F3;
+    color: #FAF2FD;
+    border-radius: 888px;
+    padding: 14.5px 32px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.career-email-btn:hover {
+    background: #C139F3;
+    transition: background 0.3s ease;
+}
+/* CAREER */
+
+/* REQUEST A QUOTE */
+.request-section {
+    display: none;
+    padding: 414px 0 353px;
+}
+.request-wrapper {
+    width: 420px;
+    margin: 0 auto;
+}
+#request-email {
+    font-family: Helvetica Light;
+    font-weight: 300;
+    font-size: 14px;
+    width: 419px;
+    padding: 16px 0 16px 32px;
+    border-radius: 888px;
+    border: 1px solid #C139F3;
+    color: #357AE6;
+    background: #050318;
+    outline: none;
+    cursor: text;
+    margin-bottom: 24px;
+}
+#request-email::placeholder {
+    color: #357AE6;
+}
+#request-email:focus {
+    border: 2px solid #C139F3;
+    padding: 15px 0 15px 31px;
+}
+.request-email-btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #050318;
+    border: 2px solid #C139F3;
+    color: #FAF2FD;
+    border-radius: 888px;
+    padding: 14.5px 32px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.request-email-btn:hover {
+    background: #C139F3;
+    transition: background 0.3s ease;
+}
+/* REQUEST A QUOTE */
+
+/* CONTACT US */
+.contact-us-section {
+    display: none;
+    padding: 450px 0 389px;
+}
+.contact-us-wrapper {
+    width: 420px;
+    margin: 0 auto;
+}
+.contact-us-email-btn {
+    display: block;
+    margin: 0 auto;
+    width: 218px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: #050318;
+    border: 2px solid #C139F3;
+    color: #FAF2FD;
+    border-radius: 888px;
+    padding: 14.5px 32px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.contact-us-email-btn:hover {
+    background: #C139F3;
+    transition: background 0.3s ease;
+}
+/* CONTACT US */
 
 /* FOOTER */
 .flex-container {
@@ -209,12 +412,14 @@ body {
 .telenkov {
     height: 36px;
 }
-/* .flex-container a img {
-    background: #FAF2FD;
-    border-radius: 100px;
-} */
+.flex-container a {
+    cursor: pointer;
+}
+.flex-container a img {
+    cursor: pointer;
+}
+/* FOOTER */
 
-
-
-
-
+.active-section {
+    display: block;
+}
