@@ -18,11 +18,7 @@
     font-family: Coolvetica Regular;
     box-sizing: border-box;
     cursor: default;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+    -webkit-user-select: none-;
 }
 body {
     font-weight: 400;
@@ -410,6 +406,9 @@ body {
     cursor: pointer;
 }
 .flex-container a img {
+    cursor: pointer;
+}
+.telenkov {
     cursor: pointer;
 }
 /* FOOTER */
