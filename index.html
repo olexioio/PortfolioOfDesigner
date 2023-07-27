@@ -7,22 +7,23 @@
     <link rel="stylesheet" href="css/my-reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/drop-file-button.css">
 </head>
 <body>
 
     <header>
         <div class="container">
             <ul class="main-menu__list">
-                <li class="main-menu__item" data-item="1"><span>Portfolio</span></li>
-                <li class="main-menu__item" data-item="2"><span>Work with us</span></li>
-                <li class="main-menu__item" data-item="3"><span>Request a quote</span></li>
-                <li class="main-menu__item" data-item="4"><span>Contact us</span></li>
+                <li class="main-menu__item"><span>Portfolio</span></li>
+                <li class="main-menu__item"><span>Work with us</span></li>
+                <li class="main-menu__item"><span>Request a quote</span></li>
+                <li class="main-menu__item"><span>Contact us</span></li>
             </ul>
         </div>
     </header>
 
 
-    <section class="main-section offer-section active-section">
+    <section class="main-section offer-section">
         <div class="container">
             <div class="offer">
                 <div class="flex-container">
@@ -36,7 +37,7 @@
         </div>
     </section>
 
-    <section class="section portfolio-section" data-section="1">
+    <section class="section portfolio-section">
         <div class="container">
             <div class="portfolio-wrapper">
                 <input type="text" placeholder="Type your email" id="portfolio-email">
@@ -45,20 +46,25 @@
         </div>
     </section>
 
-    <section class="section career-section" data-section="2">
+    <section class="section career-section active-section">
         <div class="container">
             <div class="career-wrapper">
                 <input type="text" placeholder="Type your email" id="career-email">
-                <div class="career__drop-zone" id="drop-zone">
-                    <span>+</span>
-                    <span>browse or drop your resume</span>
-                </div>
+                <form method="post" enctype="multipart/form-data">
+                    <div class="input-file-row">
+                        <label class="input-file">
+                               <input type="file" name="file[]" multiple onchange="showFile(this)">	
+                               <span id="span-drop">+<br>browse or drop your resume</span>
+                         </label>
+                        <div class="input-file-list"></div>  
+                    </div>  
+                </form>
                 <button class="career-email-btn">send resume</button>
             </div>
         </div>
     </section>
 
-    <section class="section request-section" data-section="3">
+    <section class="section request-section">
         <div class="container">
             <div class="request-wrapper">
                 <input type="text" placeholder="Type your email" id="request-email">
@@ -67,7 +73,7 @@
         </div>
     </section>
 
-    <section class="section contact-us-section" data-section="4">
+    <section class="section contact-us-section">
         <div class="container">
             <div class="contact-us-wrapper">
                 <a class="contact-us-email-btn">team@telenkov.com</a>
@@ -85,6 +91,7 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="js/file-manager.js"></script>
     <!-- <script src="js/rotate-animation.js"></script> -->
 </body>
 </html>

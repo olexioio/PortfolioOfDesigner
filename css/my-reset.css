@@ -5,6 +5,14 @@ body {
 * {
     box-sizing: border-box;
 }
+/* Забороняє виділяти текст на сайті (можна присвоїти до окремого елементу) */
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
 }

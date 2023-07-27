@@ -18,6 +18,10 @@
     font-family: Coolvetica Regular;
     box-sizing: border-box;
     cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
     user-select: none;
 }
 body {
@@ -279,7 +283,7 @@ body {
 .career__drop-zone {
     border: 1px solid #C139F3;
     border-radius: 888px;
-    height: 192px;
+    /* height: 192px; */
     margin-bottom: 24px;
     text-align: center;
     padding: 68px 0;
