@@ -6,7 +6,7 @@
     <title>Design of everything</title>
     <link rel="stylesheet" href="css/my-reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/main-buttons.css">
     <link rel="stylesheet" href="css/drop-file-button.css">
 </head>
 <body>
@@ -40,8 +40,10 @@
     <section class="section portfolio-section">
         <div class="container">
             <div class="portfolio-wrapper">
-                <input type="text" placeholder="Type your email" id="portfolio-email">
-                <button class="portfolio-email-btn">Request portfolio</button>
+                <form action="#" method="post" id="form-portfolio">
+                    <input type="text" placeholder="Type your email" id="portfolio-email" class="_req _email">
+                    <button type="submit" id="portfolio-submit" class="email-btn portfolio-email-btn"><span>Request portfolio</span></button>
+                </form>
             </div>
         </div>
     </section>
@@ -49,17 +51,17 @@
     <section class="section career-section">
         <div class="container">
             <div class="career-wrapper">
-                <input type="text" placeholder="Type your email" id="career-email">
-                <form method="post" enctype="multipart/form-data">
+                <form method="post" enctype="multipart/form-data" id="form-career">
+                    <input type="text" placeholder="Type your email" id="career-email" class="_req _email">
                     <div class="input-file-row">
                         <label class="input-file">
-                               <input type="file" name="file[]" multiple onchange="showFile(this)">	
+                               <input id="file" type="file" multiple onchange="showFile(this)" class="_req">	
                                <span id="span-drop">+<br>browse or drop your resume</span>
                          </label>
                         <div class="input-file-list"></div>  
                     </div>  
+                    <button type="submit" class="email-btn career-email-btn"><span>Send resume</span></button>
                 </form>
-                <button class="career-email-btn">send resume</button>
             </div>
         </div>
     </section>
@@ -67,8 +69,10 @@
     <section class="section request-section">
         <div class="container">
             <div class="request-wrapper">
-                <input type="text" placeholder="Type your email" id="request-email">
-                <button class="request-email-btn">Request a quote</button>
+                <form action="#" method="post" id="form-request">
+                    <input type="text" placeholder="Type your email" id="request-email" class="_req _email">
+                    <button type="submit" class="email-btn request-email-btn"><span>Request a quote</span></button>
+                </form>
             </div>
         </div>
     </section>
@@ -76,7 +80,7 @@
     <section class="section contact-us-section">
         <div class="container">
             <div class="contact-us-wrapper">
-                <a class="contact-us-email-btn">team@telenkov.com</a>
+                <a href="https://t.me/Telenkovvv" class="email-btn contact-us-email-btn"><span>team@telenkov.com</span></a>
             </div>
         </div>
     </section>
@@ -91,7 +95,12 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
-    <script src="js/file-manager.js"></script>
+    <script src="js/show-file.js"></script>
+    <!-- <script src="js/form-career.js"></script> -->
+    <script src="js/validation.js"></script>
+    <!-- <script src="js/form-request.js"></script> -->
+
+    <!-- <script src="js/test.js"></script> -->
     <!-- <script src="js/rotate-animation.js"></script> -->
 </body>
 </html>

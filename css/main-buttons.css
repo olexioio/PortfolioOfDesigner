@@ -1,7 +1,7 @@
 .btn-wrapper {
     width: 173px;
     height: 173px;
-    border: 1px solid #C139F3;
+    border-bottom: 1px solid #C139F3;
     border-radius: 100px;
 }
 .btn-wrapper a {
