@@ -23,16 +23,11 @@
 body {
     font-weight: 400;
     background: #050318;
-    padding: 48px 0 91px;
-}
-input:autofill {
-    background: #050318!important;
-}
-input:-webkit-autofill {
-    background: #050318!important;
+    padding: 48px 0 0;
 }
 .container {
-    width: 1610px;
+    max-width: 1610px;
+    width: 100%;
     margin: 0 auto;
 }
 /* MAIN MENU */
@@ -238,7 +233,7 @@ input:-webkit-autofill {
 /* CAREER */
 .career-section {
     display: none;
-    padding: 373px 0 245px;
+    padding: 353px 0 225px;
 }
 .career-wrapper {
     width: 420px;
@@ -364,11 +359,11 @@ input:-webkit-autofill {
     left: 0;
     background: #C139F3;
     border-radius: 888px;
-    transform: scale(0);
+    transform: scale(0,0);
     transition: transform 0.2s ease-in-out;
 }
 .email-btn:hover::before {
-    transform: scale(0.9);
+    transform: scale(0.97,0.9);
     transition: transform 0.2s ease-in-out;
 }
 .email-btn:focus::before {
@@ -390,6 +385,10 @@ input:-webkit-autofill {
     transition: background .3s ease-in-out,color .3s ease-in-out;
 } */
 /* FOOTER */
+footer {
+    display: flex;
+    align-items: flex-end;
+}
 .flex-container {
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,112 @@
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1300px;
+    }
+    .offer p {
+        font-size: 240px;
+        line-height: 196px;
+    }
+    .offer-section {
+        margin-bottom: 135px;
+    }
+    .portfolio-section {
+        padding: 304px 0 290px;
+    }
+    .career-section {
+        padding: 223px 0 157px;
+    }
+    .request-section {
+        padding: 320px 0 274px;
+    }
+    .contact-us-section {
+        padding: 350px 0 318px;
+    }
+}
+@media (max-width: 1366px) {
+    body {
+        padding: 15px 0 0;
+    }
+    .container {
+        max-width: 1120px;
+    }
+    .offer {
+        margin-top: 160px;
+    }
+    .offer p {
+        font-size: 210px;
+        line-height: 160px;
+    }
+    .btn-wrapper {
+        width: 123px;
+        height: 123px;
+        border-bottom: 1px solid #C139F3;
+        border-radius: 100px;
+    }
+    .btn-wrapper a {
+        color: #C139F3;
+        text-align: center;
+        padding: 52px 0;
+        text-transform: uppercase;
+        text-shadow: 1px 0 10px #C139F3;
+    }
+    .offer-section {
+        margin-bottom: 175px;
+    }
+    .portfolio-section {
+        padding: 264px 0 250px;
+    }
+    .career-section {
+        padding: 183px 0 117px;
+    }
+    .request-section {
+        padding: 280px 0 234px;
+    }
+    .contact-us-section {
+        padding: 310px 0 278px;
+    }
+}
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    .offer {
+        margin-top: 100px;
+    }
+    .offer p {
+        font-size: 180px;
+        line-height: 140px;
+    }
+    .offer-section {
+        margin-bottom: 105px;
+    }
+    .portfolio-section {
+        padding: 174px 0 170px;
+    }
+    .career-section {
+        padding: 73px 0 57px;
+    }
+    .request-section {
+        padding: 180px 0 164px;
+    }
+    .contact-us-section {
+        padding: 200px 0 215px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15px;
+    }
+}
