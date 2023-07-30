@@ -223,7 +223,28 @@
         width: 48px;
         height: 22px;
         background: url(../img/menu.png);
+        position: relative;
     }
+    .mobile-menu::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1000px;
+        height: 1000px;
+        top: -1000%;
+        left: -1000%;
+        border-radius: 1000px;
+        z-index: 2;
+        background: #C139F3;
+        transform: scale(0);
+        transition: transform 0.2s ease;
+    }
+    .mobile-menu:hover::after {
+        transform: scale(1);
+        transition: transform 0.2s ease;
+    }
+
+
     .offer-mob {
         display: block;
         margin: 0 auto;
