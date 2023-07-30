@@ -24,22 +24,22 @@
 }
 @media (max-width: 1366px) {
     body {
-        padding: 15px 0 0;
+        padding: 15px 0 15px;
     }
     .container {
-        max-width: 1120px;
+        max-width: 1170px;
     }
     .offer {
         margin-top: 160px;
     }
     .offer p {
-        font-size: 210px;
-        line-height: 160px;
+        font-size: 220px;
+        line-height: 180px;
     }
     .btn-wrapper {
         width: 123px;
         height: 123px;
-        border-bottom: 1px solid #C139F3;
+        border-bottom: 2px solid #C139F3;
         border-radius: 100px;
     }
     .btn-wrapper a {
@@ -65,16 +65,25 @@
         padding: 310px 0 278px;
     }
 }
+@media (max-width: 1260px) {
+    .container {
+        max-width: 1020px;
+    }
+    .offer p {
+        font-size: 190px;
+        line-height: 149.4px;
+    }
+}
 @media (max-width: 1199px) {
     .container {
-        max-width: 960px;
+        max-width: 920px;
     }
     .offer {
         margin-top: 100px;
     }
     .offer p {
-        font-size: 180px;
-        line-height: 140px;
+        font-size: 170px;
+        line-height: 139.4px;
     }
     .offer-section {
         margin-bottom: 105px;
@@ -95,7 +104,28 @@
 
 @media (max-width: 991px) {
     .container {
-        max-width: 720px;
+        max-width: 840px;
+    }
+    .offer p {
+        font-size: 160px;
+        line-height: 120.4px;
+    }
+    .btn-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+    .btn-wrapper a {
+        font-size: 12px;
+        padding: 42.12px 0;
+    }
+}
+@media (max-width: 915px){
+    .container {
+        max-width: 680px;
+    }
+    .offer p {
+        font-size: 120px;
+        line-height: 100.4px;
     }
 }
 
@@ -103,10 +133,122 @@
     .container {
         max-width: 540px;
     }
+    .offer p {
+        font-size: 100px;
+        line-height: 78.4px;
+    }
+    .main-menu__item {
+        margin-right: 40px;
+    }
+    .main-menu__item span{
+        font-size: 12px;
+        line-height: 16.2px;
+    }
+    .btn-wrapper {
+        width: 80px;
+        height: 80px;
+    }
+    .btn-wrapper a {
+        font-size: 9px;
+        padding: 33.69px 0;
+    }
+    .telenkov {
+        width: 100px;
+        height: 17px;
+    }
+    .telegram {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 @media (max-width: 575px) {
     .container {
         padding: 0 15px;
+    }
+    .main-menu__item {
+        margin-right: 30px;
+    }
+    .main-menu__item span{
+        font-size: 9px;
+        line-height: 12.2px;
+    }
+    .offer p {
+        font-size: 95px;
+        line-height: 72.4px;
+    }
+    .btn-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+    .btn-wrapper a {
+        font-size: 6px;
+        padding: 24.75px 0;
+    }
+    
+}
+@media (max-width: 540px) {
+    .offer p {
+        font-size: 85px;
+        line-height: 66.4px;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        display: none;
+    }
+    .offer-section {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+
+    body {
+        padding: 30px 0 0 0;
+    }
+    .mobile-section {
+        display: block;
+    }
+    .telenkov-mob {
+        display: block;
+        width: 133px;
+        height: 24px;
+        margin: 0 auto;
+    }
+    .mobile-menu {
+        display: block;
+        margin: 0 auto;
+        margin-top: 85px;
+        width: 48px;
+        height: 22px;
+        background: url(../img/menu.png);
+    }
+    .offer-mob {
+        display: block;
+        margin: 0 auto;
+        width: 258px;
+        margin-top: 85px;
+    }
+    .offer-mob span {
+        color: #C2ADFF;
+        font-size: 48px;
+        line-height: 39.36px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .offer-mob .italic {
+        font-family: Coolvetica Italic;
+    }
+    .btn-wrapper {
+        display: block;
+        margin: 0 auto;
+        margin-top: 192px;
+        width: 284px;
+        height: 64px;
+    }
+    .btn-wrapper a {
+        font-size: 16px;
+        text-shadow: 1px 0 10px #C139F3;
     }
 }
