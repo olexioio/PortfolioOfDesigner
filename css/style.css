@@ -24,6 +24,7 @@ body {
     font-weight: 400;
     background: #050318;
     padding: 48px 0 0;
+    height: 100vh;
 }
 .container {
     max-width: 1610px;
@@ -60,10 +61,6 @@ body {
 /* OFFER-SECTION */
 .offer-section {
     display: none;
-    margin-bottom: 186px;
-}
-.offer {
-    margin-top: 209px;
 }
 .flex-container {
     display: flex;
@@ -78,130 +75,10 @@ body {
 .offer p:last-child {
     font-family: "Coolvetica Italic";
 }
-/* ANIMATION */
-/* .btn-wrapper {
-    border: 2px solid #C139F3;
-    background: white;
-    display: inline-block;
-    padding: 5px;
-    border-radius: 10000px;
-    width: 173px;
-    height: 173px;
-    position: relative;
-} */
-/* .btn-wrapper::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 35px;
-    height: 180px;
-    background: #050318;
-    transform: translate(-50%, -50%);
-    animation: rotate 7s normal linear infinite;
-}
-.btn-wrapper::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 180px;
-    height: 15px;
-    background: #050318;
-    transform: translate(-50%, -50%);
-    animation: rotate 4s normal linear infinite;
-} */
-/* .btn-wrapper button {
-    width: 160px;
-    height: 160px;
-    border-radius: 10000px;
-    border: none;
-    background: #050318;
-    color: #C139F3;
-    text-transform: uppercase;
-    text-shadow: 0.3px 0.3px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-} */
-/* @keyframes rotate {
-    0% {
-        transform: translate(-50%, -50%) rotate3d(0, 0, 1, 0deg);
-      }
-    25% {
-        transform: translate(-50%, -50%) rotate3d(0, 0, 1, 90deg);
-      }
-    50% {
-        transform: translate(-50%, -50%) rotate3d(0, 0, 1, 180deg);
-      }
-    75% {
-        transform: translate(-50%, -50%) rotate3d(0, 0, 1, 270deg);
-      }
-    100% {
-        transform: translate(-50%, -50%) rotate3d(0, 0, 1, 360deg);
-      }
-} */
-/* TEST SECOND PREUDOELEMENT */
-
-
-/* .btn-wrapper-active {
-    border: 2px solid #C139F3;
-    display: inline-block;
-    padding: 5px;
-    border-radius: 10000px;
-    width: 173px;
-    height: 173px;
-    position: relative;
-} */
-/* .btn-wrapper-active::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 130px;
-    height: 180px;
-    background: #050318;
-    transform: translate(-50%, -50%);
-    animation: rotate 0.5s normal linear infinite;
-} */
-/* .btn-wrapper-active::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 180px;
-    height: 130px;
-    background: #050318;
-    transform: translate(-50%, -50%);
-    animation: rotate 0.2s normal linear infinite;
-} */
-/* .btn-wrapper-active button {
-    width: 160px;
-    height: 160px;
-    border-radius: 10000px;
-    border: none;
-    background: #050318;
-    color: #C139F3;
-    text-transform: uppercase;
-    text-shadow: #C139F3 1px 0 100px;
-    text-shadow: 0.3px 0.3px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-    position: relative;
-    z-index: 1;
-    cursor: pointer;
-} */
-/* TEST SECOND PREUDOELEMENT */
-
-
-
 
 /* PORTFOLIO SECTION */
 .portfolio-section {
     display: none;
-    padding: 414px 0 353px;
 }
 .portfolio-wrapper {
     width: 420px;
@@ -233,7 +110,7 @@ body {
 /* CAREER */
 .career-section {
     display: none;
-    padding: 353px 0 225px;
+    /* padding: 353px 0 225px; */
 }
 .career-wrapper {
     width: 420px;
@@ -286,7 +163,7 @@ body {
 /* REQUEST A QUOTE */
 .request-section {
     display: none;
-    padding: 414px 0 353px;
+    /* padding: 414px 0 353px; */
 }
 .request-wrapper {
     width: 420px;
@@ -318,7 +195,7 @@ body {
 /* CONTACT US */
 .contact-us-section {
     display: none;
-    padding: 450px 0 389px;
+    /* padding: 450px 0 389px; */
 }
 .contact-us-wrapper {
     width: 420px;
@@ -444,4 +321,11 @@ footer {
 }
 .mobile-menu__item:last-child {
     margin-right: 0;
+}
+
+.flex {
+    height: 95vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
