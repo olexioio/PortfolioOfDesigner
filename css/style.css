@@ -23,7 +23,7 @@
 body {
     font-weight: 400;
     background: #050318;
-    padding: 48px 0 0;
+    padding: 48px 0 48px;
     height: 100vh;
 }
 .container {
@@ -84,7 +84,7 @@ body {
     width: 420px;
     margin: 0 auto;
 }
-#portfolio-email {
+.portfolio-email {
     font-family: Helvetica Light;
     font-weight: 300;
     font-size: 14px;
@@ -97,13 +97,14 @@ body {
     outline: none;
     cursor: text;
     margin-bottom: 24px;
+    transition: box-shadow .2s ease,border .2s ease;
+}
+.portfolio-email::focus {
+    border: 2px solid #C139F3;
+    padding: 15px 0 15px 31px;
 }
 #portfolio-email::placeholder {
     color: #357AE6;
-}
-#portfolio-email:focus {
-    border: 2px solid #C139F3;
-    padding: 15px 0 15px 31px;
 }
 /* PORTFOLIO SECTION */
 
@@ -116,7 +117,7 @@ body {
     width: 420px;
     margin: 0 auto;
 }
-#career-email {
+.career-email {
     font-family: Helvetica Light;
     font-weight: 300;
     font-size: 14px;
@@ -129,13 +130,14 @@ body {
     outline: none;
     cursor: text;
     margin-bottom: 24px;
+    transition: box-shadow .2s ease,border .2s ease;
+}
+.career-email::focus {
+    border: 2px solid #C139F3;
+    padding: 15px 0 15px 31px;
 }
 #career-email::placeholder {
     color: #357AE6;
-}
-#career-email:focus {
-    border: 2px solid #C139F3;
-    padding: 15px 0 15px 31px;
 }
 .career__drop-zone {
     border: 1px solid #C139F3;
@@ -147,7 +149,8 @@ body {
     transition: border 0.2s ease;
 }
 .career__drop-zone:hover {
-    border: thick double #C139F3;
+    border: 2px solid #C139F3;
+    /* border: thick double #C139F3; */
     transition: border 0.2s ease;
 }
 .career__drop-zone span{
@@ -169,7 +172,7 @@ body {
     width: 420px;
     margin: 0 auto;
 }
-#request-email {
+.request-email {
     font-family: Helvetica Light;
     font-weight: 300;
     font-size: 14px;
@@ -182,13 +185,14 @@ body {
     outline: none;
     cursor: text;
     margin-bottom: 24px;
+    transition: box-shadow .2s ease,border .2s ease;
+}
+.request-email::focus {
+    border: 2px solid #C139F3;
+    padding: 15px 0 15px 31px;
 }
 #request-email::placeholder {
     color: #357AE6;
-}
-#request-email:focus {
-    border: 2px solid #C139F3;
-    padding: 15px 0 15px 31px;
 }
 /* REQUEST A QUOTE */
 
@@ -284,14 +288,6 @@ footer {
 }
 /* FOOTER */
 
-.active-section {
-    display: block;
-}
-
-._error {
-    box-shadow: 0 0 15px #C139F3;
-}
-
 /* MOBILE SECTION */
 .mobile-section {
     display: none;
@@ -328,4 +324,67 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+}
+/* GRATITUBE */
+.gratitude-section {
+    display: none;
+    /* display: block; */
+}
+.container {
+
+}
+.gratitude-text {
+    text-align: center;
+}
+.gratitude-text p {
+    font-family: Coolvetica Regular;
+    color: #FAF2FD;
+}
+.gratitude-text p:first-child {
+    font-size: 48px;
+    line-height: 57.6px;
+}
+.gratitude-text p:last-child {
+    font-size: 16px;
+}
+/* VALID MESSAGE */
+.valid {
+    position: absolute;
+    top: -20px;
+    font-family: Helvetica Light;
+    font-size: 10px;
+    line-height: 11.5px;
+    color: rgba(243, 57, 57, 1);
+    margin: 0 0 8px 32px;
+    transition: color .5s ease;
+    display: none;
+}
+._error {
+    box-shadow: 0 0 15px rgba(243, 57, 57, 1);
+    border: 1px solid rgba(243, 57, 57, 1);
+    transition: box-shadow .2s ease,border .2s ease;
+}
+#form-portfolio {
+    position: relative;
+}
+#form-career {
+    position: relative;
+}
+#form-request {
+    position: relative;
+}
+.active {
+    position: absolute;
+    top: -20px;
+    font-family: Helvetica Light;
+    font-size: 10px;
+    line-height: 11.5px;
+    color: rgba(243, 57, 57, 1);
+    margin: 0 0 8px 32px;
+    transition: color .5s ease;
+    display: block;
+}
+
+.active-section {
+    display: block;
 }

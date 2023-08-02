@@ -51,8 +51,9 @@
 /* Hover/Active */
 .input-file:hover span {
 	/* background-color: #59be6e; */
-    border: thick double #C139F3;
-    transition: border 0.2s ease;
+    /* border: thick double #C139F3; */
+    border: 2px solid #C139F3;
+    transition: border 0.1s ease;
 }
 .input-file:active span {
 	/* background-color: #2E703A; */

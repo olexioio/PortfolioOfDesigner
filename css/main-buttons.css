@@ -3,6 +3,7 @@
     height: 173px;
     border-bottom: 1px solid #C139F3;
     border-radius: 100px;
+    transition: box-shadow 0.2s ease,border-radius 0.2s ease;
 }
 .btn-wrapper a {
     color: #C139F3;
@@ -12,10 +13,11 @@
     text-shadow: 1px 0 10px #C139F3;
 }
 .btn-wrapper:hover {
-    color: #C139F3;
+    /* color: #C139F3; */
     border-radius: 100px;
-    box-shadow: 0 0 25px #C139F3,
-                0 0 25px #C139F3,
-                0 0 25px #C139F3,
-                0 0 25px #C139F3;
+    box-shadow: 0 0 5px #C139F3,
+                0 0 5px #C139F3,
+                0 0 5px #C139F3,
+                0 0 5px #C139F3;
+    transition: box-shadow 0.2s ease,border-radius 0.2s ease;
   }
