@@ -1,15 +1,10 @@
-const openMobileMenu = document.querySelector(".mobile-menu");
-const mobileMenu = document.querySelector(".mobile-menu-module");
-const closeMobileMenu = document.getElementById("close-mobile-menu");
+const mobileMenu = document.getElementById("mobile-menu-module");
+const mobileMenuButton = document.getElementById("mobile-menu");
+const mobileMenuClose = document.getElementById("close-mobile-menu")
 
-// openMobileMenu.addEventListener("click", () => {
-//     mobileMenu.style.animation = "mobile-menu-open 0.25s ease-in-out forwards";
-// });
-
-// closeMobileMenu.addEventListener("click", () => {
-//     mobileMenu.style.animation = "";
-//     // mobileMenu.style.animation = "mobile-menu-close 0.25s ease-in-out forwards";
-//     // console.log("adfsfsf");
-// });
-
-// console.log(closeMobileMenu);
+mobileMenuButton.addEventListener("click", () => {
+    mobileMenu.classList.add("mobile-menu-module-active");
+});
+mobileMenuClose.addEventListener("click", () => {
+    setTimeout(()=>{mobileMenu.classList.remove("mobile-menu-module-active");},0);
+});
