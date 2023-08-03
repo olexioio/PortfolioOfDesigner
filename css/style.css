@@ -297,7 +297,7 @@ footer {
     justify-content: center;
 }
 .mobile-menu__item {
-    margin-right: 80px;
+    /* margin-right: 80px; */
 }
 .mobile-menu__item span{
     font-weight: 400;
@@ -319,6 +319,7 @@ footer {
     margin-right: 0;
 }
 
+/* FLEX */
 .flex {
     height: 95vh;
     display: flex;
