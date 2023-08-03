@@ -195,10 +195,6 @@
 }
 @media (max-width: 480px) {
 
-
-
-    
-/* 
     .flex {
         display: none;
     }
@@ -244,8 +240,10 @@
         backdrop-filter: blur(10px);
         transform: scale(0);
         transition: transform 0.2s ease;
+        /* animation: mobile-menu-open 0.25s ease-in-out forwards; */
     }
     .mobile-menu:hover .mobile-menu-module{
+
     }
     @keyframes mobile-menu-open {
         0%{
@@ -328,6 +326,6 @@
     .btn-wrapper a {
         font-size: 16px;
         text-shadow: 1px 0 10px #C139F3;
-    } */
+    }
 
 } 
