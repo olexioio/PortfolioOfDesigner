@@ -110,7 +110,7 @@
         </footer>
     </div>
 <!-- MOBILE VERSION -->
-    <div class="mobile-section">
+    <div class="mobile-version">
         <div class="container">
             <div class="flex-mobile">
                 <img src="img/Telenkov.png" alt="TELENKOV" class="telenkov-mob">
@@ -126,13 +126,51 @@
                         </ul>
                     </div>
                 </div>
-                <div class="offer-mob">
+                <div class="offer-mob active-mobile-section">
                     <span>Design of</span>
                     <span class="italic">everything</span>
                 </div>
-                <div class="btn-wrapper">
+                <div class="btn-wrapper-mobile active-mobile-section">
                     <a href="mailto:shevchuk.olexii.srg@gmail.com">Design needed</a>
                 </div>
+<!-- Portfolio -->
+                <div class="mobile-section portfolio-mobile">
+                    <form action="#" method="post" id="form-portfolio-mobile">
+                        <p class="valid portfolio-valid">please enter valid email</p>
+                        <input type="text" placeholder="Type your email" id="portfolio-email-mobile" class="email-input portfolio-email _req _email">
+                        <button type="submit" id="portfolio-submit" class="email-btn portfolio-email-btn"><span>Request portfolio</span></button>
+                    </form>
+                </div>
+<!-- Career -->
+                <div class="mobile-section career-mobile">
+                    <form method="post" enctype="multipart/form-data" id="form-career-mobile">
+                        <p class="valid career-valid">please enter valid email</p>
+                        <input type="text" placeholder="Type your email" id="career-email-mobile" class="email-input career-email _req _email">
+                        <div class="input-file-row">
+                            <label class="input-file">
+                                <input id="file-mobile" type="file" multiple onchange="showFile(this)" class="_req">	
+                                <span id="span-drop-mobile">+<br>browse or drop your resume</span>
+                            </label>
+                            <div class="input-file-list"></div>  
+                        </div>  
+                        <button type="submit" class="email-btn career-email-btn"><span>Send resume</span></button>
+                    </form>
+                </div>
+<!-- Request -->
+                <div class="mobile-section request-mobile">
+                    <form action="#" method="post" id="form-request-mobile">
+                        <p class="valid request-valid">please enter valid email</p>
+                        <input type="text" placeholder="Type your email" id="request-email-mobile" class="email-input request-email _req _email">
+                        <button type="submit" class="email-btn request-email-btn"><span>Request a quote</span></button>
+                    </form>
+                </div>
+<!-- Contact us -->
+                <div class="mobile-section contact-us-mobile">
+                    <div class="contact-us-wrapper">
+                        <a href="https://t.me/Telenkovvv" class="email-btn contact-us-email-btn"><span>team@telenkov.com</span></a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
