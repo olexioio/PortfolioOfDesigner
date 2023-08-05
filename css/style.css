@@ -202,8 +202,12 @@ body {
     /* padding: 450px 0 389px; */
 }
 .contact-us-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 420px;
     margin: 0 auto;
+    height: 128px;
 }
 .contact-us-email-btn {
     width: 218px;
@@ -274,13 +278,44 @@ footer {
     display: flex;
     justify-content: space-between;
 }
+.flex-container-footer {
+    display: flex;
+    justify-content: space-between;
+}
 .telenkov {
     height: 36px;
 }
-.flex-container a {
+.flex-container-footer a {
     cursor: pointer;
 }
-.flex-container a img {
+.link-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.telegram {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background-image: url("../img/telegram.png");
+    transition: background .4s ease-in-out;
+}
+.telegram:hover {
+    background: url("../img/telegram-active.png");
+    transition: background .4s ease-in-out;
+}
+.behance {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background: url("../img/behance.png");
+    transition: background .4s ease-in-out;
+}
+.behance:hover {
+    background: url("../img/behance-active.png");
+    transition: background .4s ease-in-out;
+}
+.flex-container-footer a img {
     cursor: pointer;
 }
 .telenkov {
