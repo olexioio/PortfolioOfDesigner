@@ -270,16 +270,16 @@ body {
     transition: background .3s ease-in-out,color .3s ease-in-out;
 } */
 /* PLACEHOLDER */
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
     color: #357AE6;
-    opacity: 1; /* Firefox */
+    opacity: 1; 
   }
   
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  :-ms-input-placeholder {
     color: #357AE6;
   }
   
-  ::-ms-input-placeholder { /* Microsoft Edge */
+  ::-ms-input-placeholder {
     color: #357AE6;
   }
   
@@ -393,6 +393,10 @@ footer {
     box-shadow: 0 0 15px rgba(243, 57, 57, 1);
     border: 1px solid rgba(243, 57, 57, 1);
     transition: box-shadow .2s ease,border .2s ease;
+    color:rgba(243, 57, 57, 1);
+}
+._error::placeholder {
+    color:rgba(243, 57, 57, 1);
 }
 #form-portfolio {
     position: relative;

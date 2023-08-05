@@ -49,7 +49,7 @@ portfolioFormMobile.addEventListener("submit", function submitPortfolioForm(e) {
         portfolioEmailMobile.previousElementSibling.classList.add("active");
         setTimeout(portfolioValid,2000);
     }else if(!validateEmail(portfolioEmailMobile)){
-        portfolioEmailMobile.classList.add("_error");
+        portfolioEmailMobile.classList.add("_error");   
         portfolioEmailMobile.previousElementSibling.classList.add("active");
         setTimeout(portfolioValid,2000);
     }else {portfolioEmailMobile.classList.remove("_error");portfolioEmailMobile.previousElementSibling.classList.remove("active");};
