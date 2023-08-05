@@ -105,10 +105,6 @@
         width: 100px;
         height: 17px;
     }
-    .telegram {
-        width: 24px;
-        height: 24px;
-    }
 }
 
 @media (max-width: 575px) {
@@ -348,5 +344,8 @@
     }
     .mobile-item__active span{
         color: #4772E8;
+    }
+    .link-wrapper-animation-mob {
+        animation: email-input-animation .6s ease-in-out;
     }
 } 

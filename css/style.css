@@ -269,6 +269,21 @@ body {
 
     transition: background .3s ease-in-out,color .3s ease-in-out;
 } */
+/* PLACEHOLDER */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #357AE6;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #357AE6;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #357AE6;
+  }
+  
+/* PLACEHOLDER */
 /* FOOTER */
 footer {
     display: flex;
@@ -293,11 +308,14 @@ footer {
     justify-content: center;
     gap: 24px;
 }
+.link-wrapper-animation {
+    animation: email-input-animation .6s ease-in-out;
+}
 .telegram {
     cursor: pointer;
     width: 32px;
     height: 32px;
-    background-image: url("../img/telegram.png");
+    background: url("../img/telegram.png");
     transition: background .4s ease-in-out;
 }
 .telegram:hover {
