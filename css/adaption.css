@@ -196,6 +196,7 @@
         z-index: 3;
         background: #C2ADFFCC;
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         /* transform: scale(0); */
         /* transition: transform 0.2s ease; */
         /* animation: mobile-menu-open 0.25s ease-in-out forwards; */
