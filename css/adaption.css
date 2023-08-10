@@ -11,9 +11,6 @@
     .container {
         max-width: 1170px;
     }
-    .offer {
-        /* margin-top: 160px; */
-    }
     .offer p {
         font-size: 220px;
         line-height: 180px;
@@ -145,7 +142,6 @@
         overflow: hidden;
     }
     .flex {
-        /* height: 0; */
         display: none;
     }
     .flex-mobile {
@@ -180,7 +176,7 @@
         animation: opacity .6s ease-in-out;
         width: 48px;
         height: 22px;
-        background: url(../img/menu.png);
+        background: url(../img/menu.svg);
     }
     .mobile-menu-module {
         display: none;
@@ -193,9 +189,6 @@
         background: #C2ADFFCC;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        /* transform: scale(0); */
-        /* transition: transform 0.2s ease; */
-        /* animation: mobile-menu-open 0.25s ease-in-out forwards; */
     }
     .mobile-menu-module-active {
         display: block;

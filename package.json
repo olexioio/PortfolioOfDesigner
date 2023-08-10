@@ -1,0 +1,28 @@
+{
+  "name": "portfolioofdesigner",
+  "version": "1.0.0",
+  "description": "PortfolioOfDesigner, website for work",
+  "main": "main.js",
+  "scripts": {
+    "test": "-"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olexioio/PortfolioOfDesigner.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Of",
+    "Designer"
+  ],
+  "author": "Shevchuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olexioio/PortfolioOfDesigner/issues"
+  },
+  "homepage": "https://github.com/olexioio/PortfolioOfDesigner#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.4"
+  }
+}

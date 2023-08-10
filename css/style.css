@@ -111,7 +111,6 @@ body {
 /* CAREER */
 .career-section {
     display: none;
-    /* padding: 353px 0 225px; */
 }
 .career-wrapper {
     width: 420px;
@@ -150,7 +149,6 @@ body {
 }
 .career__drop-zone:hover {
     border: 2px solid #C139F3;
-    /* border: thick double #C139F3; */
     transition: border 0.2s ease;
 }
 .career__drop-zone span{
@@ -166,7 +164,6 @@ body {
 /* REQUEST A QUOTE */
 .request-section {
     display: none;
-    /* padding: 414px 0 353px; */
 }
 .request-wrapper {
     width: 420px;
@@ -199,7 +196,6 @@ body {
 /* CONTACT US */
 .contact-us-section {
     display: none;
-    /* padding: 450px 0 389px; */
 }
 .contact-us-wrapper {
     display: flex;
@@ -255,20 +251,7 @@ body {
     transform: scale(1);
     transition: transform 0.2s ease-in-out;
 }
-/* @keyframes scale {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-/* .email-btn:hover {
-    background: #C139F3;
-    color: #FAF2FD;
 
-    transition: background .3s ease-in-out,color .3s ease-in-out;
-} */
 /* PLACEHOLDER */
 ::placeholder {
     color: #357AE6;
@@ -284,6 +267,7 @@ body {
   }
   
 /* PLACEHOLDER */
+
 /* FOOTER */
 footer {
     display: flex;
@@ -315,22 +299,22 @@ footer {
     cursor: pointer;
     width: 32px;
     height: 32px;
-    background: url("../img/telegram.png");
+    background: url("../img/telegram.svg");
     transition: background .4s ease-in-out;
 }
 .telegram:hover {
-    background: url("../img/telegram-active.png");
+    background: url("../img/telegram-active.svg");
     transition: background .4s ease-in-out;
 }
 .behance {
     cursor: pointer;
     width: 32px;
     height: 32px;
-    background: url("../img/behance.png");
+    background: url("../img/behance.svg");
     transition: background .4s ease-in-out;
 }
 .behance:hover {
-    background: url("../img/behance-active.png");
+    background: url("../img/behance-active.svg");
     transition: background .4s ease-in-out;
 }
 .flex-container-footer a img {
@@ -358,7 +342,6 @@ footer {
 /* GRATITUBE */
 .gratitude-section {
     display: none;
-    /* display: block; */
 }
 .container {
 

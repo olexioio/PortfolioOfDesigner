@@ -13,7 +13,6 @@
     text-shadow: 1px 0 10px #C139F3;
 }
 .btn-wrapper:hover {
-    /* color: #C139F3; */
     border-radius: 100px;
     box-shadow: 0 0 5px #C139F3,
                 0 0 5px #C139F3,
