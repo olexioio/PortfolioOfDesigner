@@ -43,7 +43,7 @@
         <section class="section portfolio-section">
             <div class="container">
                 <div class="portfolio-wrapper">
-                    <form action="/send-email" method="post" id="form-portfolio">
+                    <form action="#" method="post" id="form-portfolio">
                         <p class="valid portfolio-valid">please enter valid email</p>
                         <input type="text" name="email" placeholder="Type your email" id="portfolio-email" class="email-input portfolio-email _req _email">
                         <button type="submit" id="portfolio-submit" class="email-btn portfolio-email-btn"><span>Request portfolio</span></button>
@@ -192,5 +192,35 @@
     <script src="js/show-file.js"></script>
     <script src="js/validation.js"></script>
     <script src="js/mobile-menu-animation.js"></script>
+
+    <script>
+        // Отправка данных на сервер
+        function send(event, php){
+        console.log("Отправка запроса");
+        event.preventDefault ? event.preventDefault() : event.returnValue = false;
+        var req = new XMLHttpRequest();
+        req.open('POST', php, true);
+        req.onload = function() {
+         if (req.status >= 200 && req.status < 400) {
+         json = JSON.parse(this.response); // Ебанный internet explorer 11
+             console.log(json);
+                
+             // ЗДЕСЬ УКАЗЫВАЕМ ДЕЙСТВИЯ В СЛУЧАЕ УСПЕХА ИЛИ НЕУДАЧИ
+             if (json.result == "success") {
+              // Если сообщение отправлено
+              alert("Сообщение отправлено");
+             } else {
+              // Если произошла ошибка
+              alert("Ошибка. Сообщение не отправлено");
+             }
+            // Если не удалось связаться с php файлом
+            } else {alert("Ошибка сервера. Номер: "+req.status);}}; 
+        
+        // Если не удалось отправить запрос. Стоит блок на хостинге
+        req.onerror = function() {alert("Ошибка отправки запроса");};
+        req.send(new FormData(event.target));
+        }
+        </script>
+
 </body>
 </html>
