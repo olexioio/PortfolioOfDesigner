@@ -36,20 +36,6 @@ portfolioForm.addEventListener("submit", function submitPortfolioForm(e) {
     }else {
         portfolioEmail.classList.remove("_error");
         portfolioEmail.previousElementSibling.classList.remove("active");
-        // test
-        let formData = new FormData(portfolioForm);
-        let response = fetch("sendemail.php", {
-            method: "POST",
-            body: formData
-        });
-        if(response.ok){
-            let result = response.json();
-            alert(result.message);
-            portfolioEmail.value = "";
-            form.reset();
-        }
-        else{alert("Error!");}
-        // test
     };
     
     function portfolioValid(){
