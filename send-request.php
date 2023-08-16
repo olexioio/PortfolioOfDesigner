@@ -5,9 +5,9 @@ require 'phpmailer/Exception.php';
 
 $email = $_POST['email'];
 // Формирование самого письма
-$title = "Request Portfolio";
+$title = "Request a Quote";
 $body = "
-<h2>portfolio Section</h2>
+<h2>request Section</h2>
 <b>Email:</b> <a>$email</a><br><br>
 ";
 
@@ -22,14 +22,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com';
-    $mail->Username   = 'shevchuk.olexii.srg@gmail.com';
-    $mail->Password   = 'cedzaehpxuglaicj';
+    $mail->Username   = 'telenkov.us@gmail.com';
+    $mail->Password   = 'lszfyjszrhtufsrl';
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('shevchuk.olexii.srg@gmail.com', 'Portfolio');
+    $mail->setFrom('telenkov.us@gmail.com', 'Telenkov.com⭐');
 
     // Получатель письма
-    $mail->addAddress('sunchopanza20@gmail.com');  
+    $mail->addAddress('team@telenkov.com');  
 
 $mail->isHTML(true);
 $mail->Subject = $title;

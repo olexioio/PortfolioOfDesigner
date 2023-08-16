@@ -32,7 +32,7 @@
                     <div class="flex-container flex-container-offer">
                         <p class="first-string">Design of</p>
                         <div class="btn-wrapper">
-                            <a href="mailto:shevchuk.olexii.srg@gmail.com">Design needed</a>
+                            <a href="mailto:team@telenkov.com">Design needed</a>
                         </div>
                     </div>
                     <p class="second-string">everything</p>
@@ -57,10 +57,10 @@
                 <div class="career-wrapper">
                     <form enctype="multipart/form-data" method="post" id="form-career" onsubmit="send(event, 'send-career.php')">
                         <p class="valid career-valid">please enter valid email</p>
-                        <input type="text" placeholder="Type your email" id="career-email" class="email-input career-email _req _email">
+                        <input type="text" placeholder="Type your email" name="email" id="career-email" class="email-input career-email _req _email">
                         <div class="input-file-row">
                             <label class="input-file">
-                                <input id="file" type="file" multiple onchange="showFile(this)" class="_req">	
+                                <input id="file" type="file" name="myfile[]" multiple onchange="showFile(this)" class="_req">	
                                 <span id="span-drop">+<br>browse or drop your resume</span>
                             </label>
                             <div class="input-file-list"></div>  
@@ -74,9 +74,9 @@
         <section class="section request-section">
             <div class="container">
                 <div class="request-wrapper">
-                    <form enctype="multipart/form-data" method="post" id="form-request" onsubmit="send(event, 'send-request.php')">
+                    <form enctype="multipart/form-data" method="post" id="form-request" onsubmit="send(event, 'send-career.php')">
                         <p class="valid request-valid">please enter valid email</p>
-                        <input type="text" placeholder="Type your email" id="request-email" class="email-input request-email _req _email">
+                        <input type="text" name="email" placeholder="Type your email" id="request-email" class="email-input request-email _req _email">
                         <button type="submit" class="email-btn request-email-btn"><span>Request a quote</span></button>
                     </form>
                 </div>
@@ -141,24 +141,24 @@
                     <span class="italic">everything</span>
                 </div>
                 <div class="btn-wrapper-mobile active-mobile-section">
-                    <a href="mailto:shevchuk.olexii.srg@gmail.com">Design needed</a>
+                    <a href="mailto:team@telenkov.com">Design needed</a>
                 </div>
 <!-- Portfolio -->
                 <div class="mobile-section portfolio-mobile">
-                    <form action="#" method="post" id="form-portfolio-mobile">
+                    <form action="#" method="post" id="form-portfolio-mobile" onsubmit="send(event, 'send-portfolio.php')">
                         <p class="valid portfolio-valid">please enter valid email</p>
-                        <input type="text" placeholder="Type your email" id="portfolio-email-mobile" class="email-input portfolio-email _req _email">
+                        <input type="text" name="email" placeholder="Type your email" id="portfolio-email-mobile" class="email-input portfolio-email _req _email">
                         <button type="submit" id="portfolio-submit" class="email-btn portfolio-email-btn"><span>Request portfolio</span></button>
                     </form>
                 </div>
 <!-- Career -->
                 <div class="mobile-section career-mobile">
-                    <form method="post" enctype="multipart/form-data" id="form-career-mobile">
+                    <form method="post" enctype="multipart/form-data" id="form-career-mobile" onsubmit="send(event, 'send-career.php')">
                         <p class="valid career-valid">please enter valid email</p>
-                        <input type="text" placeholder="Type your email" id="career-email-mobile" class="email-input career-email _req _email">
+                        <input type="text" name="email" placeholder="Type your email" id="career-email-mobile" class="email-input career-email _req _email">
                         <div class="input-file-row">
                             <label class="input-file">
-                                <input id="file-mobile" type="file" multiple onchange="showFile(this)" class="_req">	
+                                <input id="file-mobile" name="myfile[]" type="file" multiple onchange="showFile(this)" class="_req">	
                                 <span id="span-drop-mobile">+<br>browse or drop your resume</span>
                             </label>
                             <div class="input-file-list"></div>  
@@ -168,9 +168,9 @@
                 </div>
 <!-- Request -->
                 <div class="mobile-section request-mobile">
-                    <form action="#" method="post" id="form-request-mobile">
+                    <form action="#" method="post" id="form-request-mobile" onsubmit="send(event, 'send-request.php')">
                         <p class="valid request-valid">please enter valid email</p>
-                        <input type="text" placeholder="Type your email" id="request-email-mobile" class="email-input request-email _req _email">
+                        <input type="text" name="email" placeholder="Type your email" id="request-email-mobile" class="email-input request-email _req _email">
                         <button type="submit" class="email-btn request-email-btn"><span>Request a quote</span></button>
                     </form>
                 </div>

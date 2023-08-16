@@ -11,8 +11,8 @@ $title = "Send Resume";
 $body = "
 <h2>Career</h2>
 <b>Email:</b> $email<br><br>
-
-<p>$file</p>"
+"
+// <p>$file</p>"
 ;
 
 // Настройки PHPMailer
@@ -26,14 +26,14 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'shevchuk.olexii.srg@gmail.com'; // Логин на почте
-    $mail->Password   = 'cedzaehpxuglaicj'; // Пароль на почте
+    $mail->Username   = 'telenkov.us@gmail.com'; // Логин на почте
+    $mail->Password   = 'lszfyjszrhtufsrl'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('shevchuk.olexii.srg@gmail.com', 'Client'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('telenkov.us@gmail.com', 'Telenkov.com⭐'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('sunchopanza20@gmail.com');  
+    $mail->addAddress('team@telenkov.com');  
 
 if (!empty($file['name'][0])) {
     for ($ct = 0; $ct < count($file['tmp_name']); $ct++) {
